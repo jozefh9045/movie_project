@@ -92,17 +92,18 @@
         
         #comicsans{
             z-index:1;
+            position:relative;
             width:100px;
             height:100px;
             background-image:url(images/saounik.png);
             background-size:contain;
             background-repeat:no-repeat;
-            animation: sanikball 3s linear 0 infinite alternate;
+            animation: sanikball 4s ease-in-out 1s infinite alternate;
         }
         
         @keyframes sanikball{
-            from {left: 0%;}
-            to {left: 100%;}
+            from {left:5%; transform:rotateZ(0deg);}
+            to {left:90%; transform:rotateZ(36000deg);}
         }
     </style>
 </head>
